@@ -1,0 +1,51 @@
+name: "Changelog Generator"
+description: "Automatically generate a changelog entry from your git diff"
+author: "Braydon2001"
+
+branding:
+  icon: "file-text"
+  color: "blue"
+
+inputs:
+  api-key:
+    description: "Your Changelog API key from RapidAPI"
+    required: true
+  style:
+    description: "Changelog style: conventional, keepachangelog, or plain"
+    required: false
+    default: "conventional"
+  context:
+    description: "Optional hint (e.g. your PR title)"
+    required: false
+    default: ""
+  output-file:
+    description: "File to append the changelog entry to (e.g. CHANGELOG.md)"
+    required: false
+    default: ""
+  api-url:
+    description: "API endpoint"
+    required: false
+    default: "https://changelog-api-dev.up.railway.app"
+
+outputs:
+  summary:
+    description: "One-line changelog summary"
+  type:
+    description: "Conventional commit type (feat, fix, chore, etc.)"
+  breaking:
+    description: "Whether this is a breaking change"
+  bullets:
+    description: "Changelog bullet points as a JSON array"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Generate changelog entry
+      shell: bash
+      run: ${{ github.action_path }}/changelog.sh
+      env:
+        INPUT_API_KEY: ${{ inputs.api-key }}
+        INPUT_STYLE: ${{ inputs.style }}
+        INPUT_CONTEXT: ${{ inputs.context }}
+        INPUT_OUTPUT_FILE: ${{ inputs.output-file }}
+        INPUT_API_URL: ${{ inputs.api-url }}
