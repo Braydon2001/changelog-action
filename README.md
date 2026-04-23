@@ -23,7 +23,10 @@ jobs:
 
 Add your API key as a repository secret: **Settings → Secrets → New repository secret** → name it `CHANGELOG_API_KEY`.
 
+
+
 Get an API key at [RapidAPI](https://rapidapi.com/Braydon2001/api/changelog-generator).
+Your `CHANGELOG_API_KEY` secret should be your RapidAPI subscriber key.
 
 ## Inputs
 
