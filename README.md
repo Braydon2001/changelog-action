@@ -86,8 +86,6 @@ Your `CHANGELOG_API_KEY` secret should be your RapidAPI subscriber key.
 
 ## Pricing
 
-Get your API key at [RapidAPI](https://rapidapi.com/Braydon2001/api/changelog-generator).
-
 | Plan | Price | Calls/month |
 |---|---|---|
 | Free | $0 | 50 |

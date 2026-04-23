@@ -1,6 +1,6 @@
 name: "Git Diff Changelog"
 description: "Automatically generate a changelog entry from your git diff"
-author: "Braydon2001"
+author: "gurtman21"
 
 branding:
   icon: "file-text"
