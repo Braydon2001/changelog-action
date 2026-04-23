@@ -16,7 +16,7 @@ jobs:
         with:
           fetch-depth: 2  # needed to diff against previous commit
 
-      - uses: Braydon2001/changelog-action@v1
+      - uses: gurtman21/changelog-action@v1
         with:
           api-key: ${{ secrets.CHANGELOG_API_KEY }}
 ```
@@ -51,7 +51,7 @@ Your `CHANGELOG_API_KEY` secret should be your RapidAPI subscriber key.
 ### Auto-update CHANGELOG.md
 
 ```yaml
-- uses: Braydon2001/changelog-action@v1
+- uses: gurtman21/changelog-action@v1
   with:
     api-key: ${{ secrets.CHANGELOG_API_KEY }}
     output-file: CHANGELOG.md
@@ -65,7 +65,7 @@ Your `CHANGELOG_API_KEY` secret should be your RapidAPI subscriber key.
 ### Use the PR title as context
 
 ```yaml
-- uses: Braydon2001/changelog-action@v1
+- uses: gurtman21/changelog-action@v1
   with:
     api-key: ${{ secrets.CHANGELOG_API_KEY }}
     context: ${{ github.event.pull_request.title }}
@@ -75,7 +75,7 @@ Your `CHANGELOG_API_KEY` secret should be your RapidAPI subscriber key.
 ### Use outputs in later steps
 
 ```yaml
-- uses: Braydon2001/changelog-action@v1
+- uses: gurtman21/changelog-action@v1
   id: changelog
   with:
     api-key: ${{ secrets.CHANGELOG_API_KEY }}
