@@ -1,6 +1,6 @@
 # Changelog Generator Action
 
-Automatically generate a changelog entry from your git diff using AI. Powered by the [Changelog API](https://rapidapi.com/Braydon2001/api/changelog-generator).
+Automatically generate a changelog entry from your git diff using AI. Powered by the [Changelog API](https://rapidapi.com/braydon635/api/changelog-generator).
 
 ## Quick start
 
@@ -25,7 +25,7 @@ Add your API key as a repository secret: **Settings → Secrets → New reposito
 
 
 
-Get an API key at [RapidAPI](https://rapidapi.com/Braydon2001/api/changelog-generator).
+Get an API key at [RapidAPI](https://rapidapi.com/braydon635/api/changelog-generator).
 Your `CHANGELOG_API_KEY` secret should be your RapidAPI subscriber key.
 
 ## Inputs
