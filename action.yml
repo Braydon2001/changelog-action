@@ -22,10 +22,6 @@ inputs:
     description: "File to append the changelog entry to (e.g. CHANGELOG.md)"
     required: false
     default: ""
-  api-url:
-    description: "API endpoint"
-    required: false
-    default: "https://changelog-api-production-3bea.up.railway.app"
 
 outputs:
   summary:

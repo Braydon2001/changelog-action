@@ -25,9 +25,10 @@ PAYLOAD=$(jq -n \
 # --- Call the API ---
 echo "Calling Changelog API..."
 RESPONSE=$(curl -s -w "\n%{http_code}" \
-  -X POST "$INPUT_API_URL/changelog" \
+  -X POST "https://changelog-generator.p.rapidapi.com/changelog" \
   -H "Content-Type: application/json" \
-  -H "X-API-Key: $INPUT_API_KEY" \
+  -H "x-rapidapi-host: changelog-generator.p.rapidapi.com" \
+  -H "x-rapidapi-key: $INPUT_API_KEY" \
   -d "$PAYLOAD")
 
 HTTP_STATUS=$(echo "$RESPONSE" | tail -n1)
