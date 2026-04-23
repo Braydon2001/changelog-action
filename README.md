@@ -32,7 +32,7 @@ Your `CHANGELOG_API_KEY` secret should be your RapidAPI subscriber key.
 
 | Input | Required | Default | Description |
 |---|---|---|---|
-| `api-key` | Yes | — | Your API key from RapidAPI |
+| `api-key` | Yes | — | Your RapidAPI subscriber key |
 | `style` | No | `conventional` | Output style: `conventional`, `keepachangelog`, or `plain` |
 | `context` | No | — | Optional hint (e.g. your PR title) |
 | `output-file` | No | — | Append entry to this file (e.g. `CHANGELOG.md`) |
